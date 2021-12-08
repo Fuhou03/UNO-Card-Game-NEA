@@ -38,3 +38,8 @@ class Button():
         self.rect.w = max(350, self.input_text.get_width() + 10)  # Set rect width
         #   Max uses the largest argument, so width is 350 initially. Becomes bigger after text width > 350.
         pygame.draw.rect(surface, self.colour, self.rect, 2)  # Include a borderwidth (2) to blit the border only
+
+    def draw2(self, surface):
+        ''' For the register and login buttons '''
+
+        pygame.draw.rect(surface, self.colour, self.rect, 2)
