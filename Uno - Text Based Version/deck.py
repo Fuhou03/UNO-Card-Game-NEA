@@ -35,3 +35,10 @@ class Deck:
             self.deck.pop(0)  # Remove from the back of the deck
 
         return player_deck
+
+    def draw_card(self, player_deck):
+        """ When player chooses to draw a card """
+        player_deck.append(self.deck[0])
+        self.deck.pop(0)
+
+        return player_deck
