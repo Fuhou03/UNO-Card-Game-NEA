@@ -31,7 +31,7 @@ class Button():
 
     def draw(self, surface):  # surface = screen
         ''' Draw the rectangle onto screen '''
-
+      
         self.input_text = self.font.render(self.text, True, (255, 255, 255))  # Put inputted text onto screen
         surface.blit(self.input_text, (self.rect.x + 5, self.rect.y + 5))
 
@@ -43,3 +43,5 @@ class Button():
         ''' For the register and login buttons '''
 
         pygame.draw.rect(surface, self.colour, self.rect, 2)
+    
+    
